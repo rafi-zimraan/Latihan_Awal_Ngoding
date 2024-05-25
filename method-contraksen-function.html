@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METHOD CONTRAKSEN DUNCTION</title>
+</head>
+
+<body>
+    <script>
+        function getHotel() {
+            this.nameHotel = "";
+            this.ageHotel = "";
+            this.textHotel = function (hello) {
+                console.info(`Selamat anda mempunyai hotel ${hello} yang didirikan oleh saudara rafi zimraan A.W pada tahun ${this.ageHotel}`);
+            }
+        }
+
+        const biodataHotel = new getHotel();
+        biodataHotel.nameHotel = "Cavinton hotel";
+        biodataHotel.ageHotel = "1990";
+        biodataHotel.textHotel("the zimraan");
+
+        const addresHotel = new getHotel();
+        addresHotel.nameHotel = "the royal wijaya";
+        addresHotel.ageHotel = "2026";
+        addresHotel.textHotel("Wijaya is pride")
+
+        console.log(biodataHotel);
+        console.log(addresHotel);
+    </script>
+</body>
+
+</html>
